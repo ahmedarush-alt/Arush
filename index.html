@@ -3,99 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Procurement System</title>
+    <title>Comprehensive Procurement System</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#create-pr">Create PR</a></li>
-                <li><a href="#view-prs">View PRs</a></li>
-                <li><a href="#manage-vendors">Manage Vendors</a></li>
-                <li><a href="#review-approvals">Review Approvals</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="dashboard">
-            <h1>Dashboard</h1>
-            <div class="stats">
-                <div>Total PRs: <span id="total-prs">0</span></div>
-                <div>Approved PRs: <span id="approved-prs">0</span></div>
-                <div>Pending PRs: <span id="pending-prs">0</span></div>
-            </div>
-        </section>
-        <section id="manage-vendors">
-            <h2>Vendors Management</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Vendor Name</th>
-                        <th>Contact</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Vendor rows will be dynamically populated here -->
-                </tbody>
-            </table>
-        </section>
-        <section id="create-pr">
-            <h2>Create Procurement Requisition</h2>
-            <form>
-                <label for="pr-title">PR Title:</label>
-                <input type="text" id="pr-title" name="pr-title" required>
-                <label for="vendor">Select Vendor:</label>
-                <select id="vendor" name="vendor" required>
-                    <!-- Vendor options will be populated here -->
-                </select>
-                <label for="item-description">Item Description:</label>
-                <textarea id="item-description" name="item-description" required></textarea>
-                <button type="submit">Submit PR</button>
-            </form>
-        </section>
-        <section id="view-prs">
-            <h2>View Procurement Requisitions</h2>
-            <div class="horizontal-scroll">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>PR ID</th>
-                            <th>Title</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- PR rows will be dynamically populated here -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <section id="review-approvals">
-            <h2>Review Workflow Control</h2>
-            <div>
-                <h3>Pending Approvals</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>PR ID</th>
-                            <th>Title</th>
-                            <th>Reviewer</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Approval rows will be dynamically populated here -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </main>
+    <h1>Comprehensive Procurement System</h1>
+    <p>This procurement system includes the following features:</p>
+    <ul>
+        <li>Department Heads Approval Routing</li>
+        <li>User Role Management:</li>
+        <ul>
+            <li>Admin</li>
+            <li>Requestor</li>
+            <li>Reviewer</li>
+            <li>Head of Department</li>
+        </ul>
+        <li>PR Creation by All Users</li>
+        <li>Approval Thresholds based on Procurement Policy</li>
+        <li>Policy Review Section</li>
+        <li>Multi-Level Approval Workflows</li>
+    </ul>
     <footer>
-        <p>&copy; 2026 Procurement System</p>
+        <p>Updated on: 2026-02-08 06:32:23 UTC</p>
     </footer>
-    <script src="app.js"></script>
 </body>
 </html>
